@@ -1,14 +1,14 @@
 function harmlessRansomNote(noteText, magazineText) {   // Dva parametra funkcije
-    var noteArr = noteText.split(' ');                  // U parametru noteText razdvoji svaku riječ
-    var magazineArr = magazineText.split(' ');          // U parametru magazineText razdvoji svaku riječ
-    var magazineObj = {};                               // wordcounter [] is an array, {} is an object
+    let noteArr = noteText.split(' ');                  // U parametru noteText razdvoji svaku riječ
+    let magazineArr = magazineText.split(' ');          // U parametru magazineText razdvoji svaku riječ
+    let magazineObj = {};                               // wordcounter [] is an array, {} is an object
 
 magazineArr.forEach(word => {
    if (!magazineObj[word]) magazineObj[word] = 0;       // ako riječi nema u magObj onda je nula
     magazineObj[word]++;                                // povećaj
 });
 
-    var  noteIsPossible = true;
+    let  noteIsPossible = true;
     noteArr.forEach(word => {
         if (magazineObj[word]) {
             magazineObj[word]--;
