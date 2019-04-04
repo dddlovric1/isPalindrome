@@ -17,7 +17,7 @@ magazineArr.forEach(word => {
         else  noteIsPossible = false;
   });
 
-    return console.log(noteIsPossible);                     // console.log ?????
+    return console.log(noteIsPossible);                              // console.log ?????
 }
 
 harmlessRansomNote('this is a secret note for you from a secret admirer', 'puerto rico is a place of' +
