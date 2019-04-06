@@ -10,10 +10,9 @@ function isPalindrome(string) {
 
     if(lettersArr.join('') === lettersArr.reverse().join(''))
         return true;
-    else if (!lettersArr.join('') === !lettersArr.reverse().join(''))
-        return false;
+    else return false;
 }
 
-const result = isPalindrome("Madam I'm adam");
+const result = isPalindrome("fadgrvjfbf");
 
 console.log(result);
